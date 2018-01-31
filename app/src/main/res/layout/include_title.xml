@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/textcolcr"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:id="@+id/title_callback"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_callback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/title_zhong"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="注册"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:id="@+id/title_imgright"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:padding="10dp"
+            android:id="@+id/title_right"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

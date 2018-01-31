@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <EditText
+        android:inputType="number|numberDecimal"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@null"
+        android:textCursorDrawable="@null"
+        android:id="@+id/item_ed"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

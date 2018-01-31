@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ye_bei">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_title"></include>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/text_shou"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/textcolcr"
+            android:text="手动输入"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/linecolor"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:id="@+id/text_yu"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/colortext"
+            android:text="语音输入"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/view_one"
+            android:background="@color/textcolcr"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+        <View
+            android:visibility="invisible"
+            android:id="@+id/view_two"
+            android:background="@color/textcolcr"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="请输入第"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/text_nums"
+            android:textColor="@color/textcolcr"
+            android:text="1"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="件商品重量"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/red"
+            android:id="@+id/text_danwei"
+            android:text="()"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:backgroundTint="@color/linecolor"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/linecolor"></View>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recy_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+</LinearLayout>
+
+    <LinearLayout
+    android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/liner_shuru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+          <LinearLayout
+            android:layout_marginLeft="50dp"
+
+            android:background="@drawable/shape_whitesradius"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:padding="10dp"
+                android:background="@null"
+                android:id="@+id/ed_shuru"
+                android:layout_marginLeft="10dp"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/colortext"
+                android:textColor="@color/colortext"
+                android:gravity="center_horizontal"
+                android:textSize="14sp"
+                android:hint="请输入商品重量"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+
+            android:background="@drawable/shape_redradius"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:id="@+id/que_ok"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="确定"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/liner_yuyin"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_yuyin"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="按住说话"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/img_yuyin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <qi.saoma.com.barcodereader.widget.VirtualKeyboardView
+        android:id="@+id/virtualKeyboardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+</LinearLayout>

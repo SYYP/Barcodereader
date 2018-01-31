@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ye_bei"
+    tools:context="qi.saoma.com.barcodereader.MainActivity">
+<LinearLayout
+    android:id="@+id/liner_one"
+    android:background="@color/textcolcr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/text_title"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:text="Sense您好,观迎使用极光抄码器"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rela_one"
+        android:layout_below="@id/liner_one"
+        android:background="@color/textcolcr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_date"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+            android:text="2018-1-23"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/img_whitecolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/img_whitemore"
+            android:id="@+id/text_name"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:text="Hi,Sence"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@id/rela_one"
+        android:id="@+id/rela_two"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/shape_baisradius"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            android:background="@null"
+            android:textCursorDrawable="@null"
+            android:layout_marginLeft="10dp"
+            android:textColorHint="@color/colortext"
+            android:textSize="14sp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/img_search"
+            android:hint="请输入商品名称/厂号/批号"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shape_redradius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="搜索"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/rela_two"
+        android:id="@+id/spring_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy_view"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+      android:layout_marginTop="30dp"
+        android:background="@drawable/shape_redradius"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp">
+
+        <TextView
+            android:elevation="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:id="@+id/login_sso"
+            android:text="新建任务"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
+     <TextView
+         android:layout_marginTop="20dp"
+         android:layout_gravity="center"
+         android:id="@+id/text_jianjie"
+         android:textSize="16sp"
+         android:textColor="@color/textcolcr"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="20dp"
+         android:layout_centerVertical="true"
+         android:layout_alignParentBottom="true"
+         android:text="软件简介"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+    </LinearLayout>
+    </ScrollView>
+    </com.liaoinstan.springview.widget.SpringView>
+    </LinearLayout>

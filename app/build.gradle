@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "qi.saoma.com.barcodereader"
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            keyAlias 'syyp'
+            keyPassword '123456'
+            storePassword '123456'
+            storeFile file('F:/keystore.jks')
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    testCompile 'junit:junit:4.12'
+
+    //日志
+    compile 'com.github.zhaokaiqiang.klog:library:1.6.0'
+    //fastjson
+    compile 'com.alibaba:fastjson:1.1.62.android'
+    //网络
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-scalars:+'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    compile 'com.google.code.gson:gson:2.4'
+    //沉浸式
+    compile 'org.zackratos:ultimatebar:1.0.3'
+    //eventbus
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    //三级联动
+    compile 'com.contrarywind:Android-PickerView:3.2.6'
+    compile 'com.zaaach:toprightmenu:1.0'//menu
+    //springview
+    compile 'com.liaoinstan.springview:library:1.2.6'
+    compile 'com.android.support:design:23.1.1'//悬浮
+    //沉浸式
+    compile 'org.zackratos:ultimatebar:1.0.3'
+}

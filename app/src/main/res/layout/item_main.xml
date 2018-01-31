@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/shape_radioline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/re_one"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/img_shuqian"
+            android:layout_width="30dp"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/num_renwu"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="1"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+       <TextView
+            android:id="@+id/text_date"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp"
+           android:textColor="@color/bg_color"
+           android:textSize="17sp"
+           android:layout_toRightOf="@id/re_one"
+           android:text="2018-01-12"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/Vew_ome"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/re_one"
+            android:background="@color/linecolor"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+
+        <LinearLayout
+            android:id="@+id/line_one"
+
+            android:layout_below="@id/Vew_ome"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/bg_color"
+                android:text="商品名称："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:text="123#牛肉"
+                android:textColor="@color/bg_color"
+                android:textSize="16sp"
+                android:id="@+id/food_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/bg_color"
+                android:text="件数："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:text="2"
+                android:textColor="@color/bg_color"
+                android:textSize="16sp"
+                android:id="@+id/food_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/line_one"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/bg_color"
+                android:text="厂号/批号："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:text="111"
+                android:textColor="@color/bg_color"
+                android:textSize="16sp"
+                android:id="@+id/chang_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/bg_color"
+                android:text="         重量："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:text="100kg"
+                android:textColor="@color/bg_color"
+                android:textSize="16sp"
+                android:id="@+id/food_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/ye_bei"></View>
+</LinearLayout>

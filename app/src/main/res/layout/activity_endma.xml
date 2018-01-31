@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ye_bei">
+
+    <include android:layout_width="match_parent"
+        layout="@layout/include_title"
+        android:layout_height="wrap_content"></include>
+
+    <LinearLayout
+        android:id="@+id/liner_view"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+  <TextView
+      android:id="@+id/end_geshu"
+      android:layout_centerVertical="true"
+      android:textSize="14sp"
+      android:layout_marginLeft="15dp"
+      android:drawablePadding="10dp"
+      android:text="您一共收录了900个商品"
+      android:drawableLeft="@drawable/img_end"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+</RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                android:text="商品名称:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/end_name"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:text="123#牛肉"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:layout_marginLeft="25dp"
+                android:text="厂号/批号:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/end_num"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:text="001"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                android:text="单价:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/end_price"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:text="20元"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:layout_marginLeft="25dp"
+                android:text="                 总重量:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/end_weight"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:text="123.33Kg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="10dp"
+            android:background="@color/linecolor"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/zong_price"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:text="20000.00元"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toLeftOf="@id/zong_price"
+                android:layout_marginRight="10dp"
+
+                android:text="合计:"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_marginTop="45dp"
+        android:background="@drawable/shape_redradius"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp">
+
+        <TextView
+            android:elevation="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:id="@+id/look_madan"
+            android:text="查看码单"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</LinearLayout>

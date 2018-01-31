@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img_shouye">
+
+
+    <ImageView
+        android:id="@+id/callback"
+       android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:src="@drawable/img_callback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_backwhiteradioline"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/zicolor"
+            android:textSize="20sp"
+            android:text="开始抄码"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="15dp"
+            android:background="@color/linecolor"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_shoudong"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:drawablePadding="10dp"
+                android:text="手动输入"
+                android:drawableTop="@drawable/shoudong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_yuyin"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:drawablePadding="10dp"
+                android:text="语音输入"
+                android:drawableTop="@drawable/img_yuyin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
